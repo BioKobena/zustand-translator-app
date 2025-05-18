@@ -9,9 +9,9 @@ export default function App() {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
       <Text style={styles.buttonText}>
-        {i18n.t("welcome")} {i18n.t("name")}
+        {i18n.t("salutation")} Charlie
       </Text>
-      <Text>Current language: {language}</Text>
+      <Text>Langue actuelle : {language}</Text>
 
       <View style={styles.languageContainer}>
         <Button

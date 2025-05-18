@@ -1,10 +1,11 @@
-// lib/i18n.ts
 import { I18n } from 'i18n-js';
 import { getLocales } from 'expo-localization';
+import en from '@/json/en.json'
+import fr from '@/json/fr.json'
 
 const translations = {
-  en: { welcome: 'Hello', name: 'Charlie' },
-  fr: { welcome: 'Salut' },
+  en: en,
+  fr: fr,
 };
 
 const i18n = new I18n(translations);
