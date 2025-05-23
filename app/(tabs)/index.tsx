@@ -1,9 +1,15 @@
+import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-
-const Home = () => {
+import { StatusBar } from 'expo-status-bar'
+const index = () => {
   return (
-    <div>Home</div>
+    <View>
+        <StatusBar style="dark" />
+      <Text>index</Text>
+    </View>
   )
 }
 
-export default Home
+export default index
+
+const styles = StyleSheet.create({})

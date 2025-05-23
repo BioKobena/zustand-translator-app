@@ -16,7 +16,8 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.bio_paul.dilikei"
     },
     "web": {
       "bundler": "metro",
@@ -34,10 +35,18 @@
           "backgroundColor": "#ffffff"
         }
       ],
-      ["expo-localization"]
+      [
+        "expo-localization"
+      ]
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "78f34b71-9579-4663-ad33-c46ce72dd0c0"
+      }
     }
   }
 }
