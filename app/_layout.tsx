@@ -7,7 +7,8 @@ export default function RootLayout() {
       <SafeAreaView style={{ flex: 1 }}>
         <Stack>
           <Stack.Screen name="index" options={{ headerShown: false }} />
-          <Stack.Screen name="menu" options={{ headerShown: false }} />
+          <Stack.Screen name="(login)" options={{ headerShown: false }} />
+          <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         </Stack>
       </SafeAreaView>
     </SafeAreaProvider>
