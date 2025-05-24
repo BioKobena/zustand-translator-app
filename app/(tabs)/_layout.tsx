@@ -3,6 +3,12 @@ import React from "react";
 import { Slot, Tabs } from "expo-router";
 import { Ionicons, MaterialCommunityIcons, Octicons } from "@expo/vector-icons";
 import { Colors } from "@/constants/Colors";
+
+
+export const unstable_settings = {
+    initialRouteName: "index",
+};
+
 export default function RootLayout() {
     return (
         <Tabs
@@ -19,7 +25,7 @@ export default function RootLayout() {
                     marginLeft: "2%",
                     borderRadius: 50,
                     marginBottom: 15,
-                    boxShadow:"none",
+                    boxShadow: "none",
                     elevation: 0.2,
                 },
             }}

@@ -2,9 +2,11 @@ import { Stack } from "expo-router";
 import { useFonts } from "expo-font";
 import { SplashScreen } from "expo-router";
 
-SplashScreen.preventAutoHideAsync();
+// SplashScreen.preventAutoHideAsync();
+export const unstable_settings = {
+  initialRouteName: "(tabs)",
+};
 export default function RootLayout() {
-
   const [loaded] = useFonts({
     "Inter-Black": require("../assets/fonts/Inter_18pt-Black.ttf"),
     "Inter-Bold": require("../assets/fonts/Inter_18pt-Bold.ttf"),
@@ -22,9 +24,9 @@ export default function RootLayout() {
   }
 
   return (
-    <Stack>
-      <Stack.Screen name="index" options={{ headerShown: false }} />
+    <Stack initialRouteName="(tabs)">
       <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+      <Stack.Screen name="index" options={{ headerShown: false }} />
       <Stack.Screen name="(login)" options={{ headerShown: false }} />
     </Stack>
   );
