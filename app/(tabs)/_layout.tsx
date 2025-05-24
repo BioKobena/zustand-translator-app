@@ -2,9 +2,28 @@ import { Text, View } from "react-native";
 import React from "react";
 import { Slot, Tabs } from "expo-router";
 import { Ionicons, MaterialCommunityIcons, Octicons } from "@expo/vector-icons";
+import { Colors } from "@/constants/Colors";
 export default function RootLayout() {
     return (
-        <Tabs>
+        <Tabs
+            screenOptions={{
+                tabBarActiveTintColor: Colors.primary,
+                tabBarInactiveTintColor: Colors.lightGray,
+                tabBarStyle: {
+                    backgroundColor: Colors.white,
+                    borderTopWidth: 0,
+                    height: 60,
+                    position: "absolute",
+                    width: "95%",
+                    alignSelf: "center",
+                    marginLeft: "2%",
+                    borderRadius: 50,
+                    marginBottom: 15,
+                    boxShadow:"none",
+                    elevation: 0.2,
+                },
+            }}
+        >
             <Tabs.Screen
                 name="index"
                 options={{
