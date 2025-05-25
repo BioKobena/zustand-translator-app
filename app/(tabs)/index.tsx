@@ -1,11 +1,4 @@
-import {
-  Image,
-  ImageBackground,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-} from "react-native";
+import { Image, ImageBackground, StyleSheet, Text, View, ScrollView } from "react-native";
 import React from "react";
 import { StatusBar } from "expo-status-bar";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -14,7 +7,6 @@ import { Ionicons } from "@expo/vector-icons";
 import { Colors } from "@/constants/Colors";
 import FlatListCard from "@/components/Card/FlatListCard";
 import MenuCard from "@/components/Card/MenuCard";
-
 const index = () => {
   return (
     <SafeAreaView style={{ flex: 1 }}>
@@ -69,7 +61,7 @@ const index = () => {
             </Text>
           </View>
         </View>
-        <ScrollView>
+        <ScrollView style={styles.scrollViewContainer}>
           <View style={styles.flatListContainer}>
             <View style={styles.topFlatContainer}>
               <Text style={styles.textFlatTitle}>Trouvez votre catégorie</Text>

@@ -97,4 +97,8 @@ export const styles = StyleSheet.create({
         alignItems:"center",
 
     },
+    scrollViewContainer:{
+        width: "100%",
+        height: "auto",
+    }
 });
