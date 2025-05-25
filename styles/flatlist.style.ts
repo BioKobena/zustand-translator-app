@@ -9,10 +9,11 @@ export const styles = StyleSheet.create({
         justifyContent: "space-between",
         alignItems: "center",
         gap: 15,
+        height: 100,
     },
     card: {
-        width: "15%",
-        height: 95,
+        width: "16%",
+        height: "110%",
         backgroundColor: Colors.primary,
         justifyContent: "center",
         alignItems: "center",
@@ -28,7 +29,7 @@ export const styles = StyleSheet.create({
     textCard: {
         fontFamily: "Inter-Medium",
         color: Colors.textWhite,
-        fontSize: 16,
+        fontSize: 10,
         padding: 1,
         textTransform: "capitalize",
         marginTop: 5,

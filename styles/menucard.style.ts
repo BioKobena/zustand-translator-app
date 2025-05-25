@@ -3,16 +3,17 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
     container: {
-        width: "45%",
-        height: "100%",
+        width: "25%",
+        height: 235,
         padding: 15,
         backgroundColor: Colors.white,
         margin: 5,
         borderRadius: 10,
+        marginLeft: 15,
     },
     imageContainer: {
         width: "100%",
-        height: 125,
+        height: 115,
     },
     image: {
         width: "100%",

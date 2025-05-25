@@ -1,4 +1,11 @@
-import { Image, ImageBackground, StyleSheet, Text, View, ScrollView } from "react-native";
+import {
+  Image,
+  ImageBackground,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
 import React from "react";
 import { StatusBar } from "expo-status-bar";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -61,7 +68,8 @@ const index = () => {
             </Text>
           </View>
         </View>
-        <ScrollView style={styles.scrollViewContainer}>
+
+        <View style={styles.scrollViewContainer}>
           <View style={styles.flatListContainer}>
             <View style={styles.topFlatContainer}>
               <Text style={styles.textFlatTitle}>Trouvez votre catégorie</Text>
@@ -71,11 +79,20 @@ const index = () => {
             </View>
             <FlatListCard />
           </View>
-          <View style={styles.menuContainer}>
+          <ScrollView
+            horizontal
+            style={{
+              height: 450,
+              padding: 5,
+              overflowX: "scroll",
+            }}
+          >
             <MenuCard />
             <MenuCard />
-          </View>
-        </ScrollView>
+            <MenuCard />
+            <MenuCard />
+          </ScrollView>
+        </View>
       </View>
     </SafeAreaView>
   );

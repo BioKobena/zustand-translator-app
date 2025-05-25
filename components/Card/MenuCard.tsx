@@ -1,7 +1,7 @@
 import { Image, Text, View } from "react-native";
 import React from "react";
 import { styles } from "@/styles/menucard.style";
-import { Ionicons } from "@expo/vector-icons";
+import { AntDesign, Ionicons } from "@expo/vector-icons";
 import { Colors } from "@/constants/Colors";
 const MenuCard = () => {
     return (
@@ -16,7 +16,7 @@ const MenuCard = () => {
                 <Text style={styles.textTitle}>Cheese Burger</Text>
                 <View style={styles.textUnderBottom}>
                     <View style={{ width: "50%", flexDirection: "row" }}>
-                        <Ionicons
+                        <AntDesign
                             name="star"
                             size={20}
                             color={Colors.primary}
@@ -24,12 +24,12 @@ const MenuCard = () => {
                         <Text style={styles.textMiddle}>4.9</Text>
                     </View>
                     <View style={{ width: "50%", flexDirection: "row" }}>
-                        <Text style={styles.textMiddle}>190 m</Text>
                         <Ionicons
-                            name="location"
+                            name="location-outline"
                             size={20}
                             color={Colors.primary}
                         />
+                        <Text style={styles.textMiddle}>190 m</Text>
                     </View>
                 </View>
                 <Text style={styles.textPrice}>$ 17.5</Text>

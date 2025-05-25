@@ -9,6 +9,7 @@ const images: Record<string, any> = {
   tortilla: require("../../assets/images/flaticon/tortilla.png"),
   croissant: require("../../assets/images/flaticon/croissant.png"),
   kebab: require("../../assets/images/flaticon/kebab.png"),
+  bab: require("../../assets/images/flaticon/kebab.png"),
 };
 
 const data = [
@@ -18,6 +19,7 @@ const data = [
   { id: "4", name: "tortilla" },
   { id: "5", name: "croissant" },
   { id: "6", name: "kebab" },
+  { id: "7", name: "bab" },
 ];
 
 const FlatListCard = () => {
@@ -26,10 +28,17 @@ const FlatListCard = () => {
       horizontal
       showsHorizontalScrollIndicator={false}
       style={styles.scrollContainer}
+      snapToEnd
     >
       <View style={styles.container}>
-        {data.map((item) => (
-          <View key={item.id} style={styles.card}>
+        {data.map((item, index) => (
+          <View
+            key={item.id}
+            style={[
+              styles.card,
+              index === data.length - 1 && { marginRight: 26 },
+            ]}
+          >
             <Image
               source={images[item.name]}
               style={styles.image}

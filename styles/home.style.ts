@@ -95,7 +95,8 @@ export const styles = StyleSheet.create({
         height: "auto",
         justifyContent:"center",
         alignItems:"center",
-
+        width: "100%",
+        
     },
     scrollViewContainer:{
         width: "100%",
