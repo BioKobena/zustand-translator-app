@@ -1,10 +1,19 @@
-import { Image, ImageBackground, StyleSheet, Text, View } from "react-native";
+import {
+  Image,
+  ImageBackground,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
 import React from "react";
 import { StatusBar } from "expo-status-bar";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { styles } from "@/styles/home.style";
 import { Ionicons } from "@expo/vector-icons";
 import { Colors } from "@/constants/Colors";
+import FlatListCard from "@/components/Card/FlatListCard";
+import MenuCard from "@/components/Card/MenuCard";
 
 const index = () => {
   return (
@@ -12,12 +21,12 @@ const index = () => {
       <StatusBar style="dark" backgroundColor="transparent" />
       <View style={styles.container}>
         <View style={styles.topContainer}>
-          <View style={styles.imageBackground}>
-            <ImageBackground
-              style={styles.image}
-              source={require("@/assets/images/wrapper/bg-3.png")}
-            />
-          </View>
+          {/* <View style={styles.imageBackground}> */}
+          <ImageBackground
+            style={styles.image}
+            source={require("@/assets/images/wrapper/bg-3.png")}
+          />
+          {/* </View> */}
 
           <View style={styles.contentTop}>
             <View style={styles.containerLocationNot}>
@@ -60,6 +69,21 @@ const index = () => {
             </Text>
           </View>
         </View>
+        <ScrollView>
+          <View style={styles.flatListContainer}>
+            <View style={styles.topFlatContainer}>
+              <Text style={styles.textFlatTitle}>Trouvez votre catégorie</Text>
+              <Text style={[styles.textFlatTitle, { color: Colors.primary }]}>
+                Voir plus
+              </Text>
+            </View>
+            <FlatListCard />
+          </View>
+          <View style={styles.menuContainer}>
+            <MenuCard />
+            <MenuCard />
+          </View>
+        </ScrollView>
       </View>
     </SafeAreaView>
   );

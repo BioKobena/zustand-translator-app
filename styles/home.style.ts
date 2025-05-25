@@ -4,14 +4,15 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
     container: {
         width: "100%",
+        height: "100%",
     },
-    imageBackground: {
-        width: "100%",
-        height: "70%",
-        justifyContent: "center",
-        alignItems: "center",
-        opacity: 0.9,
-    },
+    // imageBackground: {
+    //     width: "100%",
+    //     height: "70%",
+    //     justifyContent: "center",
+    //     alignItems: "center",
+    //     opacity: 0.9,
+    // },
     image: {
         width: "100%",
         height: "100%",
@@ -21,8 +22,8 @@ export const styles = StyleSheet.create({
     },
     topContainer: {
         width: "100%",
-        height: "70%",
-        position: "relative",
+        height: "40%",
+        // position: "relative",
     },
     contentTop: {
         padding: 5,
@@ -71,5 +72,29 @@ export const styles = StyleSheet.create({
         borderRadius: 50,
         borderColor: Colors.white,
         padding: 5,
+    },
+    flatListContainer: {
+        width: "auto",
+    },
+    topFlatContainer: {
+        width: "100%",
+        height: 50,
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center",
+        padding: 15,
+        gap: 15,
+    },
+    textFlatTitle: {
+        fontSize: 15,
+        fontFamily: "Inter-Regular",
+        color: Colors.textGray,
+    },
+    menuContainer: {
+        flexDirection:"row",
+        height: "auto",
+        justifyContent:"center",
+        alignItems:"center",
+
     },
 });
