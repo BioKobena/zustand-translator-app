@@ -46,7 +46,7 @@ export default function RootLayout() {
                 options={{
                     title: "Achat",
                     headerShown: false,
-                    tabBarLabel: "Menu",
+                    tabBarLabel: "Panier",
                     tabBarIcon: ({ color }) => (
                         <Ionicons
                             name="basket-outline"

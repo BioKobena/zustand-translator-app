@@ -69,4 +69,4 @@ You can use Zustand to translate your app in multiple languages. It's a small an
    ```bash
    npx expo start
    ```
-`Made by Kobe`
+`Made by KobeJS`
