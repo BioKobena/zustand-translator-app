@@ -8,6 +8,7 @@ import LikeHeader from "@/components/Header/LikeHeader";
 import { Ionicons, MaterialIcons } from "@expo/vector-icons";
 import { Colors } from "@/constants/Colors";
 import MenuCard from "@/components/Card/MenuCard";
+import CounterCard from "@/components/Card/CounterCard";
 const Purchase = () => {
     return (
         <SafeAreaView style={{ flex: 1 }}>
@@ -84,23 +85,30 @@ const Purchase = () => {
                             personnes, il vous est fortement recommandé.
                         </Text>
                     </View>
-
-                    <View style={styles.recommandationContainer}>
-                        <View style={styles.titleContainer}>
-                            <Text style={styles.titleRecommandation}>
-                                Recommandations
-                            </Text>
-                            <Text style={styles.seemore}>Voir plus</Text>
-                        </View>
-                        <View style={styles.menuCardContainer}>
-                            <MenuCard />
-                            <MenuCard />
-                            <MenuCard />
-                            <MenuCard />
-                        </View>
+                </View>
+                <View style={styles.recommandationContainer}>
+                    <View style={styles.titleContainer}>
+                        <Text style={styles.titleRecommandation}>
+                            Recommandations
+                        </Text>
+                        <Text style={styles.seemore}>Voir plus</Text>
+                    </View>
+                    <View style={styles.menuCardContainer}>
+                        <MenuCard />
+                        <MenuCard />
+                    </View>
+                    <View style={styles.menuCardContainer}>
+                        <MenuCard />
+                        <MenuCard />
+                    </View>
+                    <View style={styles.menuCardContainer}>
+                        <MenuCard />
+                        <MenuCard />
                     </View>
                 </View>
             </ScrollView>
+
+            <CounterCard />
         </SafeAreaView>
     );
 };

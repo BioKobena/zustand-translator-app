@@ -4,6 +4,7 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
     container: {
         padding: 15,
+        width: "100%",
     },
     image: {
         width: "100%",
@@ -72,6 +73,7 @@ export const styles = StyleSheet.create({
         flexDirection: "column",
         justifyContent: "flex-start",
         alignItems: "flex-start",
+        width: "100%",
     },
     line: {
         borderWidth: 0.3,
@@ -97,9 +99,11 @@ export const styles = StyleSheet.create({
     },
     recommandationContainer: {
         flexDirection: "column",
-        // justifyContent: "flex-start",
-        // alignItems: "flex-start",
-        marginTop: 15,
+        justifyContent: "flex-start",
+        alignItems: "flex-start",
+        marginTop: 10,
+        width: "100%",
+        height: "auto",
     },
     titleContainer: {
         display: "flex",
@@ -120,7 +124,7 @@ export const styles = StyleSheet.create({
     menuCardContainer: {
         width: "100%",
         flexDirection: "row",
-        gap: 10,
-        marginVertical: 15,
+        gap: 5,
+        marginVertical: 5,
     },
 });
