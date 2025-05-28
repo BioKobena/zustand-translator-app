@@ -5,6 +5,9 @@ import BackHeader from "@/components/Header/BackHeader";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { styles } from "@/styles/purchase.style";
 import LikeHeader from "@/components/Header/LikeHeader";
+import { Ionicons, MaterialIcons } from "@expo/vector-icons";
+import { Colors } from "@/constants/Colors";
+import MenuCard from "@/components/Card/MenuCard";
 const Purchase = () => {
     return (
         <SafeAreaView style={{ flex: 1 }}>
@@ -27,7 +30,7 @@ const Purchase = () => {
                     />
                 </View>
 
-                <View>
+                <View style={styles.underContainer}>
                     <View style={styles.titleMenuContainer}>
                         <Text style={styles.menuTitle}>
                             Cheese Burger beacon
@@ -39,6 +42,61 @@ const Purchase = () => {
                                     "@/assets/images/flaticon/burger.png",
                                 )}
                             />
+                        </View>
+                    </View>
+                    <View>
+                        <Text style={styles.textPrice}>$ 12.3</Text>
+                    </View>
+                    <View style={styles.containerMiddle}>
+                        <View style={styles.commonDecoration}>
+                            <MaterialIcons
+                                name="attach-money"
+                                size={25}
+                                color={Colors.primary}
+                            />
+                            <Text style={styles.titleText}>
+                                Livraison gratuite
+                            </Text>
+                        </View>
+                        <View style={styles.commonDecoration}>
+                            <Ionicons
+                                name="time"
+                                size={25}
+                                color={Colors.primary}
+                            />
+                            <Text style={styles.titleText}>20-30</Text>
+                        </View>
+                        <View style={styles.commonDecoration}>
+                            <Ionicons
+                                name="star"
+                                size={25}
+                                color={Colors.primary}
+                            />
+                            <Text style={styles.titleText}>4.5</Text>
+                        </View>
+                    </View>
+                    <View style={styles.line} />
+                    <View style={styles.descriptionContainer}>
+                        <Text style={styles.descriptionTitle}>Description</Text>
+                        <Text style={styles.contentDescription}>
+                            Le Burger à la Viande est un plat typique de notre
+                            restaurant qui est très demandé par de nombreuses
+                            personnes, il vous est fortement recommandé.
+                        </Text>
+                    </View>
+
+                    <View style={styles.recommandationContainer}>
+                        <View style={styles.titleContainer}>
+                            <Text style={styles.titleRecommandation}>
+                                Recommandations
+                            </Text>
+                            <Text style={styles.seemore}>Voir plus</Text>
+                        </View>
+                        <View style={styles.menuCardContainer}>
+                            <MenuCard />
+                            <MenuCard />
+                            <MenuCard />
+                            <MenuCard />
                         </View>
                     </View>
                 </View>
