@@ -14,15 +14,15 @@ export const styles = StyleSheet.create({
     titleAbout: {
         position: "absolute",
         top: 30,
-        left: "33%",
+        left: "26%",
         justifyContent: "center",
         alignItems: "center",
         zIndex: 1000,
     },
     textAbout: {
         color: Colors.white,
-        fontFamily: "Inter-Medium",
-        fontSize: 16,
+        fontFamily: "Inter-Regular",
+        fontSize: 18,
     },
     menuTitle: {
         fontFamily: "Inter-SemiBold",

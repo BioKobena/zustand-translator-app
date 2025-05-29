@@ -9,6 +9,8 @@ import { Ionicons, MaterialIcons } from "@expo/vector-icons";
 import { Colors } from "@/constants/Colors";
 import MenuCard from "@/components/Card/MenuCard";
 import CounterCard from "@/components/Card/CounterCard";
+
+const data = [1, 2, 3, 4, 5];
 const Purchase = () => {
     return (
         <SafeAreaView style={{ flex: 1 }}>
@@ -93,10 +95,7 @@ const Purchase = () => {
                         </Text>
                         <Text style={styles.seemore}>Voir plus</Text>
                     </View>
-                    <View style={styles.menuCardContainer}>
-                        <MenuCard />
-                        <MenuCard />
-                    </View>
+
                     <View style={styles.menuCardContainer}>
                         <MenuCard />
                         <MenuCard />
