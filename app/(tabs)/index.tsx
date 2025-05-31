@@ -82,6 +82,7 @@ const index = () => {
           <ScrollView
             horizontal
             style={{
+              width: "100%",
               height: 450,
               padding: 5,
               overflowX: "scroll",

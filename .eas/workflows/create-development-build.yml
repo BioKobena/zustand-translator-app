@@ -8,6 +8,7 @@ jobs:
     type: build
     params:
       platform: android
+  bash: npx -y expo-doctor
   # build_ios:
   #   type: build 
   #   params:

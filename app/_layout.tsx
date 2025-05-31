@@ -4,7 +4,7 @@ import { SplashScreen } from "expo-router";
 
 // SplashScreen.preventAutoHideAsync();
 export const unstable_settings = {
-  initialRouteName: "(tabs)",
+  initialRouteName: "(account)",
 };
 export default function RootLayout() {
   const [loaded] = useFonts({

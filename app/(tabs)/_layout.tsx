@@ -5,9 +5,9 @@ import { Ionicons, MaterialCommunityIcons, Octicons } from "@expo/vector-icons";
 import { Colors } from "@/constants/Colors";
 
 
-export const unstable_settings = {
-    initialRouteName: "index",
-};
+// export const unstable_settings = {
+//     initialRouteName: "index",
+// };
 
 export default function RootLayout() {
     return (
@@ -72,7 +72,7 @@ export default function RootLayout() {
                 }}
             />
             <Tabs.Screen
-                name="account"
+                name="(account)"
                 options={{
                     title: "Compte",
                     headerShown: false,

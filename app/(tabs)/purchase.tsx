@@ -100,7 +100,11 @@ const Purchase = () => {
                         <MenuCard />
                         <MenuCard />
                     </View>
-                    <View style={styles.menuCardContainer}>
+                    <View
+                        style={[styles.menuCardContainer, {
+                            marginBottom: "25%",
+                        }]}
+                    >
                         <MenuCard />
                         <MenuCard />
                     </View>
